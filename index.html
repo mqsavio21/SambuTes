@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link href="css/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 min-h-screen flex flex-col">
+    <!-- Navbar -->
+    <nav class="bg-white/70 backdrop-blur-md border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <img src="Web/images/PS.png" alt="PS Logo" class="h-8">
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="index.html" class="navbar-link">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="min-h-[calc(100vh-4rem)] flex items-center justify-center p-4">
+        <div class="bg-white/60 backdrop-blur-md p-8 rounded-2xl shadow-xl w-full max-w-md">
+            <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">Welcome Back</h2>
+            <form id="loginForm" class="space-y-6">
+                <div>
+                    <label class="form-label">Username</label>
+                    <input type="text" id="username" class="form-input" required>
+                </div>
+                <div>
+                    <label class="form-label">Password</label>
+                    <input type="password" id="password" class="form-input" required>
+                </div>
+                <button type="submit" class="w-full bg-indigo-500 hover:bg-indigo-600 text-white p-3 rounded-lg font-medium transition-all duration-300 hover:shadow-lg">
+                    Sign In
+                </button>
+            </form>
+            <div id="errorMessage" class="mt-4 text-rose-500 text-center hidden"></div>
+
+            <div class="mt-6 text-center text-gray-600">
+                <a href="#" class="hover:text-gray-800 transition-colors duration-300">Forgot Password?</a>
+            </div>
+            <div class="mt-8 border-t border-gray-200 pt-6 text-center text-gray-600">
+                <p>Don't have an account? <a href="#" class="text-indigo-500 hover:text-indigo-600">Sign up</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="bg-white/70 backdrop-blur-md border-t border-gray-200">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-title">Contact Us</h3>
+                <div class="footer-contact">
+                    <p>Jl. Pasir Putih Raya No.E-5-D, RW.10, Ancol</p>
+                    <p>Kec. Pademangan, Jakarta Utara,</p>
+                    <p>Daerah Khusus Ibukota Jakarta 14430</p>
+                    <p>Telepon: (021) 6603926</p>
+                    <p>Fax: 6604026</p>
+                    <p>WhatsApp: 0813 8080 8095</p>
+                    <p>Email: info@sambu.co.id</p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="footer-link">About Us</a></li>
+                    <li><a href="#" class="footer-link">Products</a></li>
+                    <li><a href="#" class="footer-link">Services</a></li>
+                    <li><a href="#" class="footer-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Follow Us</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="footer-link">Facebook</a></li>
+                    <li><a href="#" class="footer-link">Twitter</a></li>
+                    <li><a href="#" class="footer-link">Instagram</a></li>
+                    <li><a href="#" class="footer-link">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html> 
